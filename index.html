@@ -24,7 +24,7 @@
                 <a class="logo logo-header link" href="" lang="en"><span class="logo logo-accent">Web</span>Studio</a>
                 <ul class="nav-list list">
                     <li class="nav-list-item">
-                        <a class="nav-list-link link" href="index.html">Студия</a>
+                        <a class="nav-list-link link active" href="index.html">Студия</a>
                     </li>
                     <li class="nav-list-item">
                         <a class="nav-list-link link" href="portfolio.html">Портфолио</a>
@@ -58,7 +58,7 @@
         <section class="main-section">
             <div class="container container-main-section">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="services-btn" type="button">Заказать услугу</button>
+                <button class="services-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="section second-section">
@@ -112,11 +112,23 @@
                 <h2 class="about-us">Чем мы занимаемся</h2>
                 <ul class="list about-us-list">
                     <li class="about-us-list-item"><img src="./images/img-1.jpg" alt="набор кода на планшете"
-                            width="370" height="294"></li>
+                            width="370" height="294">
+                            <div class="about-us-lable">
+                                <p class="about-us-paragraph">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                            </div>
+                        </li>
                     <li class="about-us-list-item"><img src="./images/img-2.jpg"
-                            alt="синхронизация телефона с компьютером" width="370" height="294"></li>
+                            alt="синхронизация телефона с компьютером" width="370" height="294">
+                            <div class="about-us-lable">
+                                <p class="about-us-paragraph">Мобильные приложения</p>
+                            </div>
+                            </li>
                     <li class="about-us-list-item"><img src="./images/img-3.jpg" alt="рисунок на графическом планшете"
-                            width="370" height="294"></li>
+                            width="370" height="294">
+                            <div class="about-us-lable">
+                                <p class="about-us-paragraph">Дизайнерские решения</p>
+                            </div>
+                            </li>
                 </ul>
             </div>
         </section>
@@ -372,6 +384,18 @@
         </div>
     </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./images/icons/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
